@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bootstrap Menu DEMO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <link rel="Stylesheet" href="lib/font-awesome.min.css" />
+    <link href="ext/wfa.abp.bindings.menu.css" rel="stylesheet" type="text/css" />
+    <script data-main="ext/loader.js" src="lib/require-2.1.20.js" type="text/javascript"></script>
+</head>
+<body>
+<div id='title'>
+    Bootstrap Menu Examples using Knockout bindings
+</div>
+<div>
+        <span style="float: left"><i data-toggle="dropdown" class="fa fa-chevron-circle-down"
+                                     data-bind="bootStrapMenu:{headerText:'Take Action', ddOptions:$root.menulist1.content}">
+        </i><span>Default Positioning Actions Menu</span></span><span style="float: right"><span>Default Positioning Actions Menu</span><i data-toggle="dropdown" class="fa fa-chevron-circle-down"
+                                                                                                                                           data-bind="bootStrapMenu:{headerText:'Take Action', ddOptions:$root.menulist1.content}">
+</i></span>
+</div>
+<br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+<div style="display: inline">
+    <div>
+        <div style="float: left;">
+            <span>Bottom Left Action Menu</span> <i data-toggle="dropdown" class="fa fa-chevron-circle-down"
+                                                    data-bind="bootStrapMenu:{tipPosition:'bottom-left', headerText:'Take Action', ddOptions:$root.menulist1.content}">
+        </i>
+        </div>
+        <div style="float: right;">
+            <span>Bottom Right Action Menu</span><i data-toggle="dropdown" class="fa fa-chevron-circle-down"
+                                                    data-bind="bootStrapMenu:{tipPosition:'bottom-right', ddOptions:$root.menulist2.content, headerText:'Take Action'}">
+        </i>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <div style="float: left;">
+            <span>Top Left Action Menu</span>
+            <i data-toggle="dropdown" class="fa fa-chevron-circle-down"
+                                                 data-bind="bootStrapMenu:{tipPosition:'top-left', ddOptions:$root.menulist1.content, headerText:'Take Action'}">
+        </i>
+        </div>
+        <div style="float: right;">
+            <span>Top Right Action Menu</span><i data-toggle="dropdown" class="fa fa-chevron-circle-down"
+                                                 data-bind="bootStrapMenu:{tipPosition:'top-right', ddOptions:$root.menulist2.content, headerText:'Take Action'}">
+        </i>
+        </div>
+    </div>
+</div>
+<br/>  <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+<div style="display: inline">
+        <span style="float: left"><i data-toggle="dropdown" class="fa fa-chevron-circle-down"
+                                     data-bind="bootStrapMenu:{headerText:'Take Action',ddOptions:$root.menulist1.content}">
+        </i></span><span>Default Positioning Actions Menu</span><span style="float: right"><span>Default Positioning Actions Menu</span><i data-toggle="dropdown" class="fa fa-chevron-circle-down"
+                                                                                                                                           data-bind="bootStrapMenu:{headerText:'Take Action', ddOptions:$root.menulist1.content}">
+</i></span>
+</div>
+</body>
+</html>
